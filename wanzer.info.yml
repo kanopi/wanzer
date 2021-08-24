@@ -1,0 +1,6 @@
+name: Wanzer
+type: module
+description: UCSF Base module
+package: UCSF
+core: 8.x
+core_version_requirement: ^8 || ^9

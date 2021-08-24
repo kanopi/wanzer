@@ -1,0 +1,15 @@
+{
+  "name": "drupal/wanzer",
+  "description": "UCSF Base module",
+  "type": "drupal-module",
+  "homepage": "https://github.com/kanopi/wanzer",
+  "require": {
+    "drupal/core": "*"
+  },
+  "support": {
+    "issues": "https://github.com/kanopi/wanzer/issues",
+    "source": "https://github.com/kanopi/wanzer"
+  },
+  "license": "GPL-2.0-or-later",
+  "minimum-stability": "dev"
+}
