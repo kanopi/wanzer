@@ -4,7 +4,16 @@
   "type": "drupal-module",
   "homepage": "https://github.com/kanopi/wanzer",
   "require": {
-    "drupal/core": "*"
+    "drupal/core": "*",
+    "drupal/allowed_formats": "*",
+    "drupal/datetime": "*",
+    "drupal/field_group": "*",
+    "drupal/maxlength": "*",
+    "drupal/media_library": "*",
+    "drupal/media_library_edit": "*",
+    "drupal/paragraphs": "*",
+    "drupal/title_field_for_manage_display": "*",
+    "drupal/user": "*"
   },
   "support": {
     "issues": "https://github.com/kanopi/wanzer/issues",

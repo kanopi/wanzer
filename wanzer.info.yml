@@ -4,3 +4,13 @@ description: UCSF Base module
 package: UCSF
 core: 8.x
 core_version_requirement: ^8 || ^9
+dependencies:
+  - allowed_formats:allowed_formats
+  - drupal:datetime
+  - drupal:path
+  - drupal:text
+  - field_group:field_group
+  - maxlength:maxlength
+  - media_library:media_library
+  - media_library_edit:media_library_edit
+  - paragraphs:paragraphs
