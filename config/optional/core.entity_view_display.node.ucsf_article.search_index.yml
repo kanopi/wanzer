@@ -1,0 +1,40 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.ucsf_article.ucsf_body
+    - field.field.node.ucsf_article.field_ucsf_article_author
+    - field.field.node.ucsf_article.field_ucsf_article_date
+    - field.field.node.ucsf_article.field_ucsf_article_type
+    - field.field.node.ucsf_article.field_ucsf_description
+    - field.field.node.ucsf_article.field_ucsf_display_title
+    - field.field.node.ucsf_article.field_ucsf_image
+    - field.field.node.ucsf_article.field_ucsf_lab_group
+    - field.field.node.ucsf_article.field_ucsf_subtitle
+    - field.field.node.ucsf_article.field_ucsf_tag
+    - node.type.ucsf_article
+  module:
+    - user
+id: node.ucsf_article.search_index
+targetEntityType: node
+bundle: ucsf_article
+mode: search_index
+content:
+  search_api_excerpt:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_ucsf_article_author: true
+  field_ucsf_article_date: true
+  field_ucsf_article_type: true
+  field_ucsf_description: true
+  field_ucsf_display_title: true
+  field_ucsf_image: true
+  field_ucsf_lab_group: true
+  field_ucsf_subtitle: true
+  field_ucsf_tag: true
+  links: true

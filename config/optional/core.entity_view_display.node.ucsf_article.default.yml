@@ -1,0 +1,90 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.ucsf_article.ucsf_body
+    - field.field.node.ucsf_article.field_ucsf_article_author
+    - field.field.node.ucsf_article.field_ucsf_article_date
+    - field.field.node.ucsf_article.field_ucsf_article_type
+    - field.field.node.ucsf_article.field_ucsf_description
+    - field.field.node.ucsf_article.field_ucsf_display_title
+    - field.field.node.ucsf_article.field_ucsf_image
+    - field.field.node.ucsf_article.field_ucsf_lab_group
+    - field.field.node.ucsf_article.field_ucsf_subtitle
+    - field.field.node.ucsf_article.field_ucsf_tag
+    - node.type.ucsf_article
+  module:
+    - datetime
+    - text
+    - title_field_for_manage_display
+    - user
+id: node.ucsf_article.default
+targetEntityType: node
+bundle: ucsf_article
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_ucsf_article_author:
+    weight: 6
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_ucsf_article_date:
+    weight: 3
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: month_day_year
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_ucsf_display_title:
+    type: title_value_field_formatter
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      tag: h1
+      classes: ''
+      linked: 0
+    third_party_settings: {  }
+  field_ucsf_image:
+    type: entity_reference_entity_view
+    weight: 4
+    label: hidden
+    settings:
+      view_mode: full
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_ucsf_subtitle:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_ucsf_tag:
+    weight: 0
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  field_ucsf_article_type: true
+  field_ucsf_description: true
+  field_ucsf_lab_group: true
+  links: true
+  search_api_excerpt: true
