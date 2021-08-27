@@ -9,8 +9,10 @@ dependencies:
   - drupal:datetime
   - drupal:path
   - drupal:text
+  - drupal:user
   - field_group:field_group
   - maxlength:maxlength
   - media_library:media_library
   - media_library_edit:media_library_edit
   - paragraphs:paragraphs
+  - title_field_for_manage_display:title_field_for_manage_display
