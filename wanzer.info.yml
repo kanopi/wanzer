@@ -5,8 +5,6 @@ package: UCSF
 core: 8.x
 core_version_requirement: ^8 || ^9
 dependencies:
-  - allowed_formats:allowed_formats
-  - drupal:datetime
   - drupal:path
   - drupal:text
   - drupal:user
@@ -15,4 +13,5 @@ dependencies:
   - media_library:media_library
   - media_library_edit:media_library_edit
   - paragraphs:paragraphs
+  - smart_date:smart_date
   - title_field_for_manage_display:title_field_for_manage_display
