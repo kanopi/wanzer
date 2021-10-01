@@ -1,0 +1,26 @@
+uuid: c3ed043c-696b-4442-b017-9f62f8834f9e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - node.type.page
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    plain_text: plain_text
+    full_html: '0'
+id: node.page.field_description
+field_name: field_description
+entity_type: node
+bundle: page
+label: Description
+description: 'Choose a description.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
