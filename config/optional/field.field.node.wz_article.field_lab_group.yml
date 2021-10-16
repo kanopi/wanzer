@@ -1,0 +1,28 @@
+uuid: 9382f144-fbd8-4177-ae34-35d41471263d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lab_group
+    - group.type.lab
+    - node.type.wz_article
+id: node.wz_article.field_lab_group
+field_name: field_lab_group
+entity_type: node
+bundle: wz_article
+label: 'Lab Group'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:group'
+  handler_settings:
+    target_bundles:
+      lab: lab
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

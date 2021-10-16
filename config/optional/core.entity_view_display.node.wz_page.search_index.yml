@@ -1,0 +1,36 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.wz_page.field_wz_components
+    - field.field.node.wz_page.field_wz_description
+    - field.field.node.wz_page.field_wz_display_title
+    - field.field.node.wz_page.field_wz_exclude_sidebar
+    - field.field.node.wz_page.field_wz_full_width
+    - field.field.node.wz_page.field_wz_hero
+    - field.field.node.wz_page.field_wz_image
+    - field.field.node.wz_page.field_wz_suppress_page_title
+    - node.type.wz_page
+  module:
+    - user
+id: node.wz_page.search_index
+targetEntityType: node
+bundle: wz_page
+mode: search_index
+content:
+  search_api_excerpt:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_wz_components: true
+  field_wz_description: true
+  field_wz_display_title: true
+  field_wz_exclude_sidebar: true
+  field_wz_full_width: true
+  field_wz_hero: true
+  field_wz_image: true
+  field_wz_suppress_page_title: true
+  links: true

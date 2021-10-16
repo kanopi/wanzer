@@ -1,0 +1,32 @@
+uuid: ffe081fb-2b42-493d-a56c-b9872971d448
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.modal
+    - field.field.media.wz_remote_video.field_fallback_image
+    - field.field.media.wz_remote_video.field_media_oembed_video
+    - media.type.wz_remote_video
+  module:
+    - media
+id: media.wz_remote_video.modal
+targetEntityType: media
+bundle: wz_remote_video
+mode: modal
+content:
+  field_media_oembed_video:
+    type: oembed
+    label: hidden
+    weight: 0
+    settings:
+      max_width: 0
+      max_height: 0
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  field_fallback_image: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

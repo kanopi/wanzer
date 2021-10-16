@@ -1,0 +1,18 @@
+uuid: 2b58c214-b12d-42cf-a167-69b623929cdb
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_exclude_sidebar
+field_name: field_exclude_sidebar
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,40 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.wz_article.wz_body
+    - field.field.node.wz_article.field_wz_article_author
+    - field.field.node.wz_article.field_wz_article_date
+    - field.field.node.wz_article.field_wz_article_type
+    - field.field.node.wz_article.field_wz_description
+    - field.field.node.wz_article.field_wz_display_title
+    - field.field.node.wz_article.field_wz_image
+    - field.field.node.wz_article.field_wz_lab_group
+    - field.field.node.wz_article.field_wz_subtitle
+    - field.field.node.wz_article.field_wz_tag
+    - node.type.wz_article
+  module:
+    - user
+id: node.wz_article.search_index
+targetEntityType: node
+bundle: wz_article
+mode: search_index
+content:
+  search_api_excerpt:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_wz_article_author: true
+  field_wz_article_date: true
+  field_wz_article_type: true
+  field_wz_description: true
+  field_wz_display_title: true
+  field_wz_image: true
+  field_wz_lab_group: true
+  field_wz_subtitle: true
+  field_wz_tag: true
+  links: true

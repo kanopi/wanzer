@@ -1,0 +1,28 @@
+uuid: 013cfe2d-6611-42d8-9a67-72f771c28922
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image
+    - media.type.wz_image
+    - node.type.wz_page
+id: node.wz_page.field_image
+field_name: field_image
+entity_type: node
+bundle: wz_page
+label: 'Social Image'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

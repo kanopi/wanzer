@@ -1,0 +1,31 @@
+uuid: 148b5e9d-99bb-4864-aa8a-82f823639886
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.card_image
+    - field.field.media.wz_image.field_media_image
+    - media.type.wz_image
+    - responsive_image.styles.medium
+  module:
+    - responsive_image
+id: media.wz_image.card_image
+targetEntityType: media
+bundle: wz_image
+mode: card_image
+content:
+  field_media_image:
+    label: hidden
+    weight: 0
+    settings:
+      responsive_image_style: medium
+      image_link: ''
+    third_party_settings: {  }
+    type: responsive_image
+    region: content
+hidden:
+  created: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

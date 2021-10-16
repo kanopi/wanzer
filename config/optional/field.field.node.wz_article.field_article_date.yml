@@ -1,0 +1,24 @@
+uuid: fb564eb4-6743-43fa-95d8-f2f0dff75a87
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_article_date
+    - node.type.wz_article
+  module:
+    - datetime
+id: node.wz_article.field_article_date
+field_name: field_article_date
+entity_type: node
+bundle: wz_article
+label: 'Article Date'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

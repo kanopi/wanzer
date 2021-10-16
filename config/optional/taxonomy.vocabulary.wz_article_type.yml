@@ -1,0 +1,8 @@
+uuid: 244404f6-897a-4074-adb0-b7ea24f78fc0
+langcode: en
+status: true
+dependencies: {  }
+name: 'Article Type'
+vid: wz_article_type
+description: ''
+weight: 0

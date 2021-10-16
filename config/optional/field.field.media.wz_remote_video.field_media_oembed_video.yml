@@ -1,0 +1,19 @@
+uuid: 44c06fc1-cec8-4232-9d42-d48c09f90e19
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_oembed_video
+    - media.type.wz_remote_video
+id: media.wz_remote_video.field_media_oembed_video
+field_name: field_media_oembed_video
+entity_type: media
+bundle: wz_remote_video
+label: 'Youtube Remote video URL'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

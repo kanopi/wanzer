@@ -1,0 +1,23 @@
+uuid: 572114f0-7bae-4f44-9ac2-ca15b3b9ffbc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_suppress_page_title
+    - node.type.wz_page
+id: node.wz_page.field_suppress_page_title
+field_name: field_suppress_page_title
+entity_type: node
+bundle: wz_page
+label: 'Suppress Page Title'
+description: 'Check this box to suppress the standard page title. This comes in handy for cases where another component might be at the top of the page with an H1 tag.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

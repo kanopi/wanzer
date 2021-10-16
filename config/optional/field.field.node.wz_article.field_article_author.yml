@@ -1,0 +1,28 @@
+uuid: 517b5b2e-e75f-4072-b3fe-9cde255bff4b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_article_author
+    - node.type.wz_article
+    - node.type.kanopi_wz_person
+id: node.wz_article.field_article_author
+field_name: field_article_author
+entity_type: node
+bundle: wz_article
+label: 'Article Author'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      kanopi_wz_person: kanopi_wz_person
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
