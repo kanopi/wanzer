@@ -1,0 +1,54 @@
+uuid: be294d41-15ac-44e6-9416-bfe2060a55b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hero
+    - node.type.page
+    - paragraphs.paragraphs_type.hero
+    - paragraphs.paragraphs_type.links_bar
+  module:
+    - entity_reference_revisions
+id: node.page.field_hero
+field_name: field_hero
+entity_type: node
+bundle: page
+label: Hero
+description: 'Choose one hero and an optional linksbar'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      hero: hero
+      links_bar: links_bar
+    target_bundles_drag_drop:
+      accordion:
+        weight: 8
+        enabled: false
+      accordion_item:
+        weight: 9
+        enabled: false
+      card:
+        weight: 10
+        enabled: false
+      card_container:
+        weight: 11
+        enabled: false
+      hero:
+        enabled: true
+        weight: 3
+      links_bar:
+        enabled: true
+        weight: 13
+      linksbar_item:
+        weight: 14
+        enabled: false
+      text:
+        weight: 2
+        enabled: false
+field_type: entity_reference_revisions

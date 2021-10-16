@@ -1,0 +1,23 @@
+uuid: 1858f1f2-d9b4-45bb-8f44-e5aefc2c0ad6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_full_width
+    - node.type.page
+id: node.page.field_full_width
+field_name: field_full_width
+entity_type: node
+bundle: page
+label: 'Full Width'
+description: 'Check this box to have the page go full width, edge to edge.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
