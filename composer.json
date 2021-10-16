@@ -9,7 +9,7 @@
     "drupal/field_group": "*",
     "drupal/image_effects": "*",
     "drupal/imageapi_optimize": "*",
-    "drupal/imagemagick": "*",
+    "drupal/imagemagick": "^3.2",
     "drupal/inline_entity_form": "*",
     "drupal/maxlength": "*",
     "drupal/media_library_edit": "*",
