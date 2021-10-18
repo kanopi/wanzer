@@ -23,6 +23,5 @@
     "issues": "https://github.com/kanopi/wanzer/issues",
     "source": "https://github.com/kanopi/wanzer"
   },
-  "license": "GPL-2.0-or-later",
-  "minimum-stability": "dev"
+  "license": "GPL-2.0-or-later"
 }
