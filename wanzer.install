@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the Wanzer module.
+ */
+
+/**
+ * Implements hook_uninstall().
+ */
+function kanopi_ucsf_profile_uninstall() {
+  \Drupal::service('config.factory')
+    ->getEditable('wanzer.config')
+    ->delete();
+}
+
+/**
+ * Implements hook_install().
+ */
+function kanopi_ucsf_profile_install() {
+  module_set_weight('wanzer', 2);
+}
