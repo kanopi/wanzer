@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: default
+label: Default
+description: ''
+attributes: {  }
+matchers:
+  3e936cc3-b0e6-4267-a707-dc2423ace6c6:
+    uuid: 3e936cc3-b0e6-4267-a707-dc2423ace6c6
+    id: 'entity:node'
+    weight: 0
+    settings:
+      result_description: ''
+      bundles: {  }
+      group_by_bundle: true
+      include_unpublished: false
+  8e781ba9-1b2d-46ba-88fc-2f7a2f980bcd:
+    uuid: 8e781ba9-1b2d-46ba-88fc-2f7a2f980bcd
+    id: 'entity:media'
+    weight: 0
+    settings:
+      result_description: ''
+      bundles: {  }
+      group_by_bundle: true

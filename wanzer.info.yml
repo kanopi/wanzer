@@ -5,13 +5,33 @@ package: UCSF
 core: 8.x
 core_version_requirement: ^8 || ^9
 dependencies:
+  - drupal:breakpoint
+  - drupal:field
+  - drupal:field_ui
+  - drupal:image
+  - drupal:media
+  - drupal:media_library
+  - drupal:menu_ui
+  - drupal:node
   - drupal:path
+  - drupal:responsive_image
+  - drupal:system
+  - drupal:taxonomy
   - drupal:text
   - drupal:user
+  - drupal:views
+  - ctools:ctools
   - field_group:field_group
+  - imageapi_optimize:imageapi_optimize
+  - imagemagick:imagemagick
+  - image_effects:image_effects
+  - inline_entity_form:inline_entity_form
   - maxlength:maxlength
-  - media_library:media_library
   - media_library_edit:media_library_edit
-  - paragraphs:paragraphs
-  - smart_date:smart_date
-  - title_field_for_manage_display:title_field_for_manage_display
+  - metatag:metatag
+  - metatag:metatag_open_graph
+  - pathauto:pathauto
+  - schema_metatag:schema_metatag
+  - schema_metatag:schema_article
+  - schema_metatag:schema_person
+  - schema_metatag:schema_web_page

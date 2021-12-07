@@ -3,22 +3,36 @@
   "description": "UCSF Base module",
   "type": "drupal-module",
   "homepage": "https://github.com/kanopi/wanzer",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    },
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ],
+  "minimum-stability": "dev",
   "require": {
     "drupal/core": "*",
-    "drupal/allowed_formats": "*",
-    "drupal/datetime": "*",
+    "drupal/ctools": "*",
     "drupal/field_group": "*",
+    "drupal/image_effects": "*",
+    "drupal/imageapi_optimize": "*",
+    "drupal/imagemagick": "^3.2",
+    "drupal/inline_entity_form": "*",
     "drupal/maxlength": "*",
-    "drupal/media_library": "*",
     "drupal/media_library_edit": "*",
+    "drupal/metatag": "*",
     "drupal/paragraphs": "*",
-    "drupal/title_field_for_manage_display": "*",
-    "drupal/user": "*"
+    "drupal/pathauto": "*",
+    "drupal/schema_metatag": "*",
+    "drupal/title_field_for_manage_display": "*"
   },
   "support": {
     "issues": "https://github.com/kanopi/wanzer/issues",
     "source": "https://github.com/kanopi/wanzer"
   },
-  "license": "GPL-2.0-or-later",
-  "minimum-stability": "dev"
+  "license": "GPL-2.0-or-later"
 }

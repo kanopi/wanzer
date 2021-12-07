@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: max_225x145
+label: max_225x145
+effects:
+  50e71928-5f20-4618-8870-22d5f0a0c8b6:
+    uuid: 50e71928-5f20-4618-8870-22d5f0a0c8b6
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 225
+      height: 145
+      anchor: center-center
