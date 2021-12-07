@@ -2,6 +2,6 @@ langcode: en
 status: true
 dependencies: {  }
 name: Tag
-vid: tag
+vid: wz_tag
 description: ''
 weight: 0

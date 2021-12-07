@@ -2,7 +2,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_display_title
     - node.type.wz_page
 id: node.wz_page.field_display_title
 field_name: field_display_title
